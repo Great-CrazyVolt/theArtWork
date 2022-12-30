@@ -1,24 +1,26 @@
 import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch,Routes,useNavigate } from 'react-router-dom';
+import Home from './components/home';
+import Test from './components/test';
+import Profile from './components/profie';
+import Vote_Details from './components/vote_details';
+import Header from './components/header';
+
 import './App.css';
 
 function App() {
+  const navigation = useNavigate()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Routes>
+          <Route exact path={`${process.env.PUBLIC_URL}/`}   element={<Header/>}/>
+          <Route exact path={`${process.env.PUBLIC_URL}/daovotes`}   element={<Home/>}/>
+          <Route exact path={`${process.env.PUBLIC_URL}/myprofile`}   element={<Profile/>}/>
+          <Route exact path={`${process.env.PUBLIC_URL}/profile`}   element={<Vote_Details/>}/>
+        </Routes>
+   
+      
+    </>
   );
 }
 
