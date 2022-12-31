@@ -54,7 +54,7 @@ class Score_Component extends Component {
       else {
         this.setState({
           profile_image_name: profile_image,
-          image_url: 'http://localhost:8080/images/' + profile_image
+          image_url: 'http://192.168.80.130/images/' + profile_image
         })
       }
       this.setState({

@@ -507,7 +507,7 @@ class Profile extends Component {
         else {
           this.setState({
             profile_image_name: profile_image,
-            image_url: 'http://localhost:8080/images/' + profile_image
+            image_url: 'http://192.168.80.130/images/' + profile_image
           })
         }
         if (job == null || job == 'null' || job == '') {
@@ -727,7 +727,7 @@ class Profile extends Component {
         check_image: file,
         filesize_error: '',
         image_url: URL.createObjectURL(e.target.files[0])
-        // image_url: `http://localhost:8080/images/${file.name}`
+        // image_url: `http://192.168.80.130/images/${file.name}`
       })
       setTimeout(() => {
         this.onSubmit()

@@ -56,7 +56,7 @@ class Header extends Component {
       let id = parsed[0].id
       let metamaskID = parsed[0].metamaskID
       this.setState({
-        profile_image: 'http://localhost:8080/images/' + parsed[0].profile_image
+        profile_image: 'http://192.168.80.130/images/' + parsed[0].profile_image
       })
 
       console.log(this.state.profile_image)

@@ -279,7 +279,7 @@ class Vote_Details extends Component {
 
         }
         else {
-          image = 'http://localhost:8080/images/' + profile_image
+          image = 'http://192.168.80.130/images/' + profile_image
         }
         if (type == 'Member') {
           batch = 1
@@ -482,7 +482,7 @@ class Vote_Details extends Component {
 
         }
         else {
-          image = 'http://localhost:8080/images/' + profile_image
+          image = 'http://192.168.80.130/images/' + profile_image
         }
         if (type == 'Member') {
           batch = 1
